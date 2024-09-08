@@ -36,7 +36,7 @@ library(lme4)
 library(lmerTest)
 library(MASS)
 
-df.all <- read_csv("/Volumes/Groups/Phonetik/StadtWien2023/data/MeidlingerLDataWithPositionFULLandENGLISH.csv")%>%
+df.all <- read_csv("data2.csv")%>%
   mutate(rating = Rating, position=matchedPosition)
 
 # norm rating based on max-min
