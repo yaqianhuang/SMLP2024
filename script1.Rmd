@@ -36,7 +36,7 @@ The list of at most five analysis or modeling issues that are of primary concern
 
 ```{r loaddf, warning=F,message=F}
 
-pros <- read_csv("prosody-log.csv")
+pros <- read_csv("data1.csv")
 
 # filter out derived neutral tone in sentence-medial stimuli
 pros <- pros[!(pros$Tone=='0'&pros$Phrase%in%c('PM','PI','PF')),]
